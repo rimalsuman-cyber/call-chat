@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #0f172a;
+  background: #f7f9fb;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(49, 107, 243, 0.08), transparent 28rem),
+    linear-gradient(180deg, #eef4fb 0%, #f7f9fb 22rem);
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #b9c9d8;
+  border-radius: 999px;
+}
+
+.stitch-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+.stitch-input {
+  border: 1px solid #c6c6cd;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.dark-executive {
+  background: #0b1c30;
+  color: #e2e2e6;
+}
+
+.dark-purple {
+  background: #1a0b2e;
+  color: #f3e8ff;
+}
+
+.dark-profile {
+  background: #120d1d;
+  color: #f5f0ff;
+}
+
+.dark-purple > header {
+  background: #150a24;
+  border-color: #4a3570;
+  color: #f3e8ff;
+}
+
+.dark-profile > header {
+  background: #1e1432;
+  border-color: #45385e;
+  color: #f5f0ff;
+}
+
+.dark-purple > header h1,
+.dark-profile > header h1 {
+  color: inherit;
+}
+
+.dark-purple > header p,
+.dark-profile > header p {
+  color: currentColor;
+  opacity: 0.68;
+}
