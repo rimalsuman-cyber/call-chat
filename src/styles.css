@@ -79,3 +79,46 @@ button, input, select, textarea {
   color: currentColor;
   opacity: 0.68;
 }
+
+.theme-executive {
+  min-height: 100vh;
+  background: #120d1d;
+  color: #f5f0ff;
+}
+
+.theme-executive > header {
+  background: #1e1432;
+  border-color: #45385e;
+  color: #f5f0ff;
+}
+
+.theme-executive > header h1 {
+  color: #f5f0ff;
+}
+
+.theme-executive > header p {
+  color: #c9badb;
+}
+
+.theme-executive .stitch-card,
+.theme-executive-card {
+  border-color: #45385e;
+  background: #1e1432;
+  color: #f5f0ff;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.theme-executive .stitch-input {
+  border-color: #45385e;
+  background: #342456;
+  color: #f5f0ff;
+}
+
+.theme-executive .stitch-input input,
+.theme-executive .stitch-input select {
+  color: #f5f0ff;
+}
+
+.theme-executive .stitch-input input::placeholder {
+  color: #c9badb;
+}

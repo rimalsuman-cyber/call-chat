@@ -56,8 +56,8 @@ export default function MeetPage() {
     window.setTimeout(() => setMatching(false), 2200);
   }
 
-  return <div>
-    <Header title="Meet Friends" subtitle="Discover new people with privacy-first connection controls." action={<Link to="/video-call/d1" className="rounded-2xl bg-ocean px-4 py-3 font-bold text-white shadow-stitch">Start Video Chat</Link>} />
+  return <div className="theme-executive">
+    <Header title="Meet Friends" subtitle="Discover new people with privacy-first connection controls." action={<Link to="/video-call/d1" className="rounded-2xl bg-[#ff40b4] px-4 py-3 font-bold text-white shadow-lg">Start Video Chat</Link>} />
     <section className="space-y-5 px-4 md:px-8">
       <div className="stitch-card p-4">
         <div className="grid gap-3 md:grid-cols-[1.4fr_repeat(3,1fr)]">
@@ -80,7 +80,7 @@ export default function MeetPage() {
             <h2 className="flex items-center gap-2 font-bold"><Sparkles size={18} />Quick Match</h2>
             <p className="mt-2 text-sm text-slate-600">Choose preferred languages, review limited profile details, then both people confirm before any camera starts.</p>
             <label className="mt-4 flex items-start gap-2 text-sm"><input className="mt-1" type="checkbox" checked={safetyAccepted} onChange={e => setSafetyAccepted(e.target.checked)} />I confirm I am old enough to use discovery, accept the terms and community guidelines, and consent to camera/microphone prompts.</label>
-            <button className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-ocean py-3 font-bold text-white shadow-stitch disabled:bg-slate-300" disabled={!state.settings.randomMatchingEnabled} onClick={quickMatch}><Camera size={18} />Quick Match</button>
+            <button className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#ff40b4] py-3 font-bold text-white shadow-lg disabled:bg-[#45385e]" disabled={!state.settings.randomMatchingEnabled} onClick={quickMatch}><Camera size={18} />Quick Match</button>
             {matching && <div className="mt-4 rounded-2xl bg-blue-50 p-4 text-center font-bold text-ocean"><div className="mx-auto mb-2 h-10 w-10 animate-ping rounded-full bg-ocean/30" />Searching for a mutually available match...</div>}
           </div>
           <div className="stitch-card p-4">
