@@ -1,0 +1,9 @@
+{
+  "name": "Team Call&Chat",
+  "short_name": "TeamChat",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f7fb",
+  "theme_color": "#1769aa",
+  "icons": []
+}
