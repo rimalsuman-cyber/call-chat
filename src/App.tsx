@@ -62,7 +62,7 @@ export default function App() {
   return (
     <AppContext.Provider value={value}>
       <Routes>
-        <Route path="/login" element={<LoginPage onSignIn={() => { setState(authService.signIn(state)); navigate('/'); }} />} />
+        <Route path="/login" element={<LoginPage onSignIn={(redirectTo = '/') => { setState(authService.signIn(state)); navigate(redirectTo); }} />} />
         <Route path="/" element={<Protected><Layout /></Protected>}>
           <Route index element={<DashboardPage />} />
           <Route path="contacts" element={<ContactsPage />} />
